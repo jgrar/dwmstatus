@@ -46,7 +46,7 @@ mpd_status (buffer_t *buf) {
 
 	if (!song) {
 		fprintf(stderr, "error fetching song\n");
-		goto END;
+		goto END2;
 	}
 
 	enum mpd_state state = mpd_status_get_state(status);
