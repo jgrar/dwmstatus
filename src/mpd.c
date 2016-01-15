@@ -67,7 +67,12 @@ mpd_status (buffer_t *buf) {
 	const char *artist = mpd_song_get_tag(song, MPD_TAG_ARTIST, 0);
 	const char *title = mpd_song_get_tag(song, MPD_TAG_TITLE, 0);
 
-	buffer_printf(buf, " %s - %s ", artist, title);
+	if (artist && title) {
+		buffer_printf(buf, " %s - %s ", artist, title);
+	} else {
+		const char *filename = mpd_song_get_uri(song);
+		buffer_printf(buf, " %s ", filename);
+	}
 
 	unsigned elapsed = mpd_status_get_elapsed_time(status);
 	unsigned total = mpd_status_get_total_time(status);
