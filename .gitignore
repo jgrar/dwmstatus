@@ -1,0 +1,6 @@
+*.o
+src/dwmstatus
+screenshots
+screenshots/*
+src/bak
+.*.sw[po]
