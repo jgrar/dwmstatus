@@ -1,6 +1,5 @@
 *.o
-src/dwmstatus
+dwmstatus
 screenshots
 screenshots/*
-src/bak
 .*.sw[po]

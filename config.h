@@ -1,5 +1,5 @@
-#ifndef DWMSTATUS_H
-# define DWMSTATUS_H
+#ifndef CONFIG_H
+# define CONFIG_H
 
 # include "colors.h"
 # include "mpd.h"
@@ -23,4 +23,4 @@ static const statusfn_t Statusfns[] = {
 	clock_status,
 };
 
-#endif /* DWMSTATUS_H */
+#endif /* CONFIG_H */

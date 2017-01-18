@@ -14,7 +14,7 @@ typedef void (*initfn_t)();
 
 typedef void (*statusfn_t)(buffer_t *status);
 
-#include "dwmstatus.h"
+#include "config.h"
 
 static void
 init () {
